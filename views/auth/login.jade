@@ -1,0 +1,19 @@
+extends ../Layout_Index
+block content
+    div(class="container p-4")
+        div(class="row")
+            div(class="col-mod-4 mx-auto")
+                div(class="card text-center")
+                    div(class="card-header")
+                        h2 Iniciar Sesion
+                    div(class="card-body")
+                        img(src="/images/User.png" alt="Logo Inicio Sesion", class="card-img-top mx-auto m-2 rounded-circle w-50")
+                        form(action="/login", method="POST")
+                            div(class="form-group")
+                                label(for="email") Correo Electrónico(s):
+                                input(type="text", name="email", placeholder="Correo Electrónico", class="form-control", autofocus, required, id="email")
+                            div(class="form-group")
+                                label(for="password") Contraseña:
+                                input(type="password", name="password", placeholder="Contraseña", class="form-control",id="password", required)
+                            div(class="form-group")
+                                button(type="submit" class="btn btn-success btn-block") Iniciar Sesión

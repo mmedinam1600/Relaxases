@@ -1,0 +1,20 @@
+extends ../Layout_Users.jade
+block content
+    a(href="/links/add" class="btn btn-success") Crear Link
+    div(class="container p-4")
+        div(class="row")
+            each link, i in links
+                div(class="col-md-3")
+                    div(class="card text-center")
+                        div(class="card-body")
+                            a(href="#{link.url}", target="blank")
+                                h3(class="card-title text-uppercase") #{link.title}
+                            p(class="m-2") #{link.description}
+                            p #{link.created_at}
+                            a(href="/links/delete/#{link.id}" class="btn btn-danger") Delete Link
+                            a(href="/links/edit/#{link.id}" class="btn btn-secondary") Edit
+             else
+                 div(class="col-md-4 mx-auto")
+                     div(class="card card-body text-center")
+                         p No hay links creados aun
+                         a(href="/links/add") Crea Uno!

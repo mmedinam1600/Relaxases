@@ -1,0 +1,52 @@
+extends ../Layout_Index
+block content
+    div(class="container p-4")
+        div(class="row")
+            div(class="col-mod-4 mx-auto")
+                div(class="card text-center")
+                    div(class="card-header")
+                        h2 Registrarse
+                    div(class="card-body")
+                        form(action="/register", method="POST")
+                            div(class="form-group")
+                                label(for="nombre") Nombre(s):
+                                input(type="text", name="nombre", placeholder="Nombre(s)", class="form-control Nombre", autofocus, required, id="nombre")
+                            div(class="form-group")
+                                label(for="apellido") Apellido(s):
+                                input(type="text", name="apellido", placeholder="Apellido(s)", class="form-control Apellido", required, id="apellido")
+                            div(class="form-group")
+                                label(for="edad") Edad:
+                                input(type="number", name="edad", placeholder="Edad", class="form-control", required, id="edad")
+                            div(class="form-group")
+                                label(for="fec_nac") Fecha de Nacimiento:
+                                input(type="date", name="fec_nac", class="form-control", required, id="fec_nac")
+                            div(class="form-group")
+                                label(for="genero") Género:
+                                select(name="genero", class="form-control", required, id="genero")
+                                    option(disabled, selected) Selecciona una opción
+                                    option() Masculino
+                                    option() Femenino
+                            div(class="form-group")
+                                label(for="curp") CURP:
+                                input(type="text", name="curp", placeholder="CURP", class="form-control curp", maxlength="18", minlength="18", required, id="curp")
+                            div(class="form-group")
+                                label(for="email") Correo electrónico:
+                                input(type="email", name="email", placeholder="Email. relaxases@example.com", class="form-control", id="email", aria-describedby="emailHelp", required)
+                                small(id="emailHelp" class="form-text text-muted") Nunca compartiremos tu correo electrónico con nadie más
+                            div(class="form-group")
+                                label(for="password") Contraseña:
+                                input(type="password", name="password", placeholder="Contraseña", class="form-control",id="password", required)
+                            div(class="form-group")
+                                label(for="confirm_password") Confirmar Contraseña:
+                                input(type="password", name="confirm_password", placeholder="Confirmar contraseña", class="form-control",id="confirm_password", required)
+                            div(class="form-group")
+                                button(type="submit" class="btn btn-success btn-block") Registrarse
+
+
+//                    p Genero:
+  //                  div(class="form-check form-check-inline")
+    //                    input(class="form-check-input", type="radio", name="inlineRadioOptions", id="masculino" value="Masculino", required=)
+      //                  label(class="form-check-label" for="masculino") Masculino
+        //            div(class="form-check form-check-inline")
+          //              input(class="form-check-input", type="radio", name="inlineRadioOptions", id="femenino" value="Femenino", required)
+            //            label(class="form-check-label" for="femenino") Femenino

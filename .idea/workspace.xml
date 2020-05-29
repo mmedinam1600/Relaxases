@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ADOO" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+        <option value="tsconfig.json" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="Jade File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1c6dei4EWn6uOYWZfgODa9x98cg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/users" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views\users" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\stylesheets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views\auth" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="" />
+      <created>1589853073792</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589853073792</updated>
+      <workItem from="1589853105760" duration="6521000" />
+      <workItem from="1589918134461" duration="237000" />
+      <workItem from="1589920007487" duration="7303000" />
+      <workItem from="1589980986634" duration="1859000" />
+      <workItem from="1590254694352" duration="646000" />
+      <workItem from="1590255398212" duration="18958000" />
+      <workItem from="1590518362250" duration="2612000" />
+      <workItem from="1590521615847" duration="33292000" />
+      <workItem from="1590612815447" duration="10133000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590524836723">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590524836723" />
+    <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1590255915973">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1590255915973" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1590522071095">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590522071095" />
+    <state width="1345" height="182" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1589923803861" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1590522071095">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590522071095" />
+    <state width="1345" height="182" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1589923803861" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1590522071095">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590522071095" />
+    <state width="1345" height="182" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1589923803861" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1590522071095">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590522071095" />
+    <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589923803861" />
+  </component>
+</project>
