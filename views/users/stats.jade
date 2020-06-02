@@ -6,6 +6,18 @@ block content
     div(class="container")
         canvas(id="myCanvas")
         script.
+            const socket = io();
+            let counter=0;
+            socket.on('Grafica:data', function(dataSerial){
+                console.log(dataSerial);
+                myChart.data.labels.push("counter");
+                myChart.data.datasets.forEach(dataset => {
+                    dataset.data.push(dataSerial.value);
+                });
+                counter++;
+                myChart.update();
+            });
+
             var ctx = document.getElementById('myCanvas').getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'line',

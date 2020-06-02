@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/javascripts/grafica.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/socket.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/socket.io/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/socket.io/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Layout_Users_Stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/Layout_Users_Stats.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/stats.jade" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +38,9 @@
         <option value="Pug File" />
         <option value="tsconfig.json" />
         <option value="package.json" />
-        <option value="JavaScript File" />
         <option value="Jade File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -54,6 +60,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -93,7 +100,8 @@
       <workItem from="1590518362250" duration="2612000" />
       <workItem from="1590521615847" duration="33292000" />
       <workItem from="1590612815447" duration="10133000" />
-      <workItem from="1591051993819" duration="5940000" />
+      <workItem from="1591051993819" duration="6365000" />
+      <workItem from="1591110130758" duration="2613000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>

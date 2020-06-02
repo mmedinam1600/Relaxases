@@ -17,15 +17,26 @@ let expjade = require('express-jade');
 let flash = require('connect-flash'); //Para mostrar mensajes entre las vistas
 let { database } = require('./keys');
 
+let socketIO = require('socket.io');
+let http = require('http');
+require("./lib/passport");
 //----------------------------------------------\\
 
 //--------------Inicializaciones-----------\\
 
 let app = express(); //Ejecutamos express
-require("./lib/passport");
-
+const server = http.createServer(app);
+let io = socketIO(server);
 
 //--------------------------------------------\\
+
+//------------Sockets------------------\\
+require('./socket')(io);
+
+
+//----------------------------------------\\
+
+
 
 //------------Ajustes---------\\
 var path = require('path');
@@ -106,7 +117,7 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 //----------Start Server------------------\\
-app.listen(app.get('port'), () => {
+server.listen(app.get('port'), () => {
   console.log("Servidor en el puerto", app.get('port') );
 });
 
