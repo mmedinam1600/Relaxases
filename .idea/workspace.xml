@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Layout_Users_Stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/Layout_Users_Stats.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partitials/grafica.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/partitials/grafica.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/stats.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1590518362250" duration="2612000" />
       <workItem from="1590521615847" duration="33292000" />
       <workItem from="1590612815447" duration="10133000" />
-      <workItem from="1591051993819" duration="5024000" />
+      <workItem from="1591051993819" duration="5940000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>
@@ -104,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591056471555</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Actualizacion de Stats">
+      <created>1591057134050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591057134050</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="27" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590524836723" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591057121413">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1591057133301">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1591057121413" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1591057133301" />
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1590255915973">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -157,9 +162,13 @@
     </state>
     <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.738/-293.-1080.1920.1050@0.0.1366.738" timestamp="1590522071095" />
     <state width="1345" height="182" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1589923803861" />
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591056846516">
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2" timestamp="1591058045569">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1591056846516" />
+    <state x="275" y="101" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1591058045569" />
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591057147942">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="492" y="285" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.738@0.0.1366.738" timestamp="1591057147942" />
   </component>
 </project>

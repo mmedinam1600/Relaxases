@@ -63,6 +63,34 @@ app.use( (req, res, next) =>{
 //----------------------------------------\\
 
 
+//------------- Conexion con arduino --------\\
+//Serial Comunication
+const Serialport = require('serialport');
+const Readline = Serialport.parsers.Readline;
+
+const port = new Serialport('COM3', {
+  baudRate: 9600
+});
+
+const parser = port.pipe(new Readline({ delimeter:'\r\n'}));
+
+parser.on('open', function (){
+  console.log('connection is openned');
+});
+
+parser.on('data', function(data){
+  console.log(data);
+  io.emit('Grafica:data',{
+    value:data
+  });
+});
+
+port.on('error', function(err){
+  console.log(err);
+});
+//------------------------------------------\\
+
+
 //--------------Routes------------------\\
 app.use(require('./routes/index'));
 app.use(require('./routes/authentication'));
