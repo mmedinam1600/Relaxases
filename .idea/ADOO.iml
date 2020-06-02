@@ -9,5 +9,6 @@
     <orderEntry type="library" name="popper" level="application" />
     <orderEntry type="library" name="Chart" level="application" />
     <orderEntry type="library" name="Chart.bundle" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
   </component>
 </module>
