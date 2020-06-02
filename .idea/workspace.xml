@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/default_Icons/avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default_Icons/avatar5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default_Icons/avatar6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default_Icons/img_avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/default_Icons/img_avatar2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/profile.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ADOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ADOO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/passport.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/passport.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/stylesheets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/Layout_Users.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/Layout_Users.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partitials/navigation.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/partitials/navigation.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/partitials/navigationUser.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/partitials/navigationUser.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/profile.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/profile.jade" afterDir="false" />
-    </list>
+    <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +94,7 @@
       <workItem from="1590521615847" duration="33292000" />
       <workItem from="1590612815447" duration="10133000" />
       <workItem from="1591051993819" duration="6365000" />
-      <workItem from="1591110130758" duration="14867000" />
+      <workItem from="1591110130758" duration="14981000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>
