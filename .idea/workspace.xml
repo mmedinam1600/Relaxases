@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="" />
+    <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/Layout_Users_Stats.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/partitials/grafica.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ADOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ADOO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Layout_Users.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/Layout_Users.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/stats.jade" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +46,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1c6dei4EWn6uOYWZfgODa9x98cg" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -43,6 +57,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views/users" />
@@ -80,6 +95,7 @@
       <workItem from="1590518362250" duration="2612000" />
       <workItem from="1590521615847" duration="33292000" />
       <workItem from="1590612815447" duration="10133000" />
+      <workItem from="1591051993819" duration="4273000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,20 @@
+block hi
+    div(class="container")
+        h1 Hola :D
+        canvas(id="myCanvas")
+        script.
+            var ctx = document.getElementById('myCanvas').getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Serial'],
+                    datasets: [{
+                        label: 'Serial',
+                        backgroundColor: '#FFFFFF',
+                        borderColor: '#FF0000',
+                        data: [],
+                        pointRadius: 0
+                    }]
+                },
+                options: {}
+            });

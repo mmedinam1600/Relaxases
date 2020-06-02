@@ -1,5 +1,6 @@
 include ./partitials/navigationUser.jade
 include ./partitials/message.jade
+include ./partitials/grafica.jade
 doctype html
 html(lang="es")
     head
@@ -17,10 +18,10 @@ html(lang="es")
         // ---------------- FONT AWESOME ----------------
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.13.0/css/all.css", integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V", crossorigin="anonymous")
     body
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js")
         block navigation
         block message
         center
-            br
             br
             block content
             br
