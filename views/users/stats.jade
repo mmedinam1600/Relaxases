@@ -1,8 +1,8 @@
 extends ../Layout_Users_Stats.jade
 block content
-    h1 Graphics Node Arduino
-    h3 Nombre: #{user.nombre}
+    h1 Bienvenido de Nuevo #{user.nombre}
     h5 #{user.email}
+    h2#titulo Ingrese su Dedo en el Lector para Inciar
     div(class="container")
         canvas(id="myCanvas")
         script.
@@ -10,12 +10,13 @@ block content
             let counter=0;
             socket.on('Grafica:data', function(dataSerial){
                 console.log(dataSerial);
-                myChart.data.labels.push("counter");
+                myChart.data.labels.push(counter.toFixed(2));
                 myChart.data.datasets.forEach(dataset => {
                     dataset.data.push(dataSerial.value);
                 });
-                counter++;
+                counter+=0.05;
                 myChart.update();
+                document.getElementById("titulo").innerHTML = "Nivel de %SPO2: " + dataSerial.value.toString();
             });
 
             var ctx = document.getElementById('myCanvas').getContext('2d');
