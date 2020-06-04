@@ -6,16 +6,19 @@ html(lang="es")
         title Relaxases
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1")
-        meta(name="description" content="Los mejores tips para aliviar tu estrés.")
-        meta(name="author" content="Jorge Regis, Miguel Medina, Sergio Benítez y Adan Esquivel")
-        // ----------- GOOGLE FONTS -----------------
-        link(href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap", rel="stylesheet")
-        // -----------  BOOSTRAP 4 --------------
-        link#bootstrap-css(href='//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css', rel='stylesheet')
-        // ------------- STYLES ---------------------
-        link(href="/stylesheets/styles.css", rel="stylesheet")
         // ---------------- FONT AWESOME ----------------
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.13.0/css/all.css", integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V", crossorigin="anonymous")
+        // -----------  BOOSTRAP 4 --------------
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous")
+        //-------------------------------------------------------
+        // ----------- GOOGLE FONTS -----------------
+        link(href=href = "https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap", rel="stylesheet", type="text/css", media="none", onload="this.media='all';")
+        //-------------------------------------------------------
+        // ------------- STYLES ---------------------
+        link(href="/stylesheets/styles.css", rel="stylesheet")
+        //---------------------------------------------------
+        meta(name="description" content="Los mejores tips para aliviar tu estrés.")
+        meta(name="author" content="Jorge Regis, Miguel Medina, Sergio Benítez y Adan Esquivel")
     body
         block navigation
         block message
