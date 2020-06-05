@@ -1,14 +1,14 @@
 extends ../Layout_Users_Stats.jade
 block content
     h1 Bienvenido de Nuevo #{user.nombre}
-    h5 #{user.email}
+    h5#cuenta #{user.email}
     h2#titulo Ingrese su Dedo en el Lector para Inciar
     div(class="container")
         canvas(id="myCanvas")
         script.
             let level=0, FinalLevel=0;
             const socket = io();
-            let counter=0, scount=0;
+            let counter=0, scount=0, rc=15;
             socket.on('Grafica:data', function(dataSerial){
                 console.log(dataSerial);
                 myChart.data.labels.push(counter.toFixed(2));
@@ -17,29 +17,29 @@ block content
                 });
                 counter+=0.05;
                 scount++;
+                rc-=0.05;
                 level+=parseInt(dataSerial.value);
                 myChart.update();
                 document.getElementById("titulo").innerHTML = "Nivel de %SPO2: " + dataSerial.value.toString();
-                if(scount>=300)
+                document.getElementById("cuenta").innerHTML = "Espere " + rc.toFixed().toString() + " segundos";
+                if(scount>300)
                 {
                     socket.disconnect();
+                    document.getElementById("cuenta").innerHTML = "Test Finalizado!";
                     FinalLevel=(level/300).toFixed(2);
+                    document.getElementById("titulo").innerHTML = "Nivel de %SPO2: " + FinalLevel.toString();
                     if(FinalLevel<95)
                     {
-                        document.getElementById("estres").innerHTML = "Su nivel de Saturación de Oxigeno es bajo. Es porbable que tenga un ataque de estres";
+                        document.getElementById("estres").innerHTML = "Su nivel de Saturación de Oxigeno es bajo. Es probable que este padeciendo un ataque de estres";
                     }
                     else
                     {
                         document.getElementById("estres").innerHTML = "Su nivel de Saturación de Oxigeno se encuentra estable.";
                     }
-                    popup();
                     document.getElementById("percent").innerHTML = "Nivel Promedio de %SPO2: " + FinalLevel.toString();
-                    function popup() {
-                    $('.modal').modal();
-                    $('#modal1').modal('open');
-                    $('.trigger-modal').modal();
-                    }
-
+                    $(document).ready(function(){
+                        $("#Modal").modal("show");
+                    });
                 }
             });
 
@@ -60,12 +60,18 @@ block content
                 options: {}
             });
     
-    #modal1.modal
-      .modal-content
-        h4#percent Modal Header
-        p#estres A bunch of text
-      .modal-footer
-        a.modal-close.waves-effect.waves-green.btn-flat(href='#!') De Acuerdo
+    #Modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+      .modal-dialog.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#percent.modal-title Modal title
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            p#estres Holaaaa
+          .modal-footer
+            //button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+            button.btn.btn-primary(type='button') De Acuerdo
 
 
 

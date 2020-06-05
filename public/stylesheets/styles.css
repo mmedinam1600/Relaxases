@@ -168,7 +168,7 @@ a {
   color: #0062cc;
 }
 
-.modal { width: 50% !important ; height: 30% !important ; }
+#exampleModal { width: 50% !important ; height: 30% !important ; }
 
 
 .sprite {
