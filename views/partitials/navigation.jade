@@ -1,15 +1,22 @@
 block navigation
-    nav(class="navbar navbar-expand-md p-3 mb-2 bg-primary text-white")
-        a(class="navbar-brand" href="/")
+    nav(class="navbar navbar-expand-lg bg-custom2 text-white fixed-top" id="mainNav")
+        a(class="navbar-brand js-scroll-trigger" href="#page-top")
             img(src="/images/ESCOM.png" width="51" height="39" alt="ESCOM")
-        button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
-            div(class="bg-light")
-                span(class="navbar-toggler-icon")
-        div(class="collapse navbar-collapse", id="navbarNav")
+        button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarResponsive", aria-controls="navbarResponsive", aria-expanded="false", aria-label="Toggle navigation")
+            span(class="navbar-toggler-icon")
+        div(class="collapse navbar-collapse", id="navbarResponsive")
             ul(class="navbar-nav ml-auto")
-                li(class="nav-item active")
-                    a(class="nav-link text-white fas fa-user-plus" href="/register")  Registro
                 li(class="nav-item")
-                    a(class="nav-link text-white fas fa-sign-in-alt" href="/login")  Inicio de Sesión
+                    a(class="nav-link js-scroll-trigger text-white", href="#acerca") Acerca
+                li(class="nav-item")
+                    a(class="nav-link js-scroll-trigger text-white", href="#servicios") Servicios
+                li(class="nav-item")
+                    a(class="nav-link js-scroll-trigger text-white", href="#contacto") Contacto
+                li(class="nav-item")
+                    a(class="nav-link text-white" href="/login" title="Iniciar Sesion")
+                        i(class="fas fa-sign-in-alt ml-1")
+                li(class="nav-item")
+                    a(class="nav-link text-white" href="/register" title="Registrarse")
+                        i(class="fas fa-user-plus ml-1")
                 //li(class="nav-item")
                     a(class="nav-link text-white" href="/links") Links

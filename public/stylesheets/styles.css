@@ -1,8 +1,39 @@
 body {
   /*background: -webkit-linear-gradient(left, #3931af, #00c6ff);*/
   font-family: 'Oswald', sans-serif;
+}
+header {
+  padding: 156px 0 100px;
+}
+
+.bg-custom{
+  background: rgba(65,235,193,1);
+  background: -moz-linear-gradient(left, rgba(65,235,193,1) 0%, rgba(68,245,174,1) 50%, rgba(126,242,196,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(65,235,193,1)), color-stop(50%, rgba(68,245,174,1)), color-stop(100%, rgba(126,242,196,1)));
+  background: -webkit-linear-gradient(left, rgba(65,235,193,1) 0%, rgba(68,245,174,1) 50%, rgba(126,242,196,1) 100%);
+  background: -o-linear-gradient(left, rgba(65,235,193,1) 0%, rgba(68,245,174,1) 50%, rgba(126,242,196,1) 100%);
+  background: -ms-linear-gradient(left, rgba(65,235,193,1) 0%, rgba(68,245,174,1) 50%, rgba(126,242,196,1) 100%);
+  background: linear-gradient(to right, rgba(65,235,193,1) 0%, rgba(68,245,174,1) 50%, rgba(126,242,196,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41ebc1', endColorstr='#7ef2c4', GradientType=1 );
+}
+
+.bg-custom2{
+  background: rgba(122,127,255,1);
+  background: -moz-linear-gradient(left, rgba(122,127,255,1) 0%, rgba(10,18,255,1) 50%, rgba(173,176,255,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(122,127,255,1)), color-stop(50%, rgba(10,18,255,1)), color-stop(100%, rgba(173,176,255,1)));
+  background: -webkit-linear-gradient(left, rgba(122,127,255,1) 0%, rgba(10,18,255,1) 50%, rgba(173,176,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(122,127,255,1) 0%, rgba(10,18,255,1) 50%, rgba(173,176,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(122,127,255,1) 0%, rgba(10,18,255,1) 50%, rgba(173,176,255,1) 100%);
+  background: linear-gradient(to right, rgba(122,127,255,1) 0%, rgba(10,18,255,1) 50%, rgba(173,176,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a7fff', endColorstr='#adb0ff', GradientType=1 );
+}
+
+.fondo{
   background-image: url("../images/Background.jpg");
-  color: red;
+}
+
+section {
+  padding: 150px 0;
 }
 .index{
   width: 100vw;
@@ -138,6 +169,47 @@ a {
 }
 
 .modal { width: 50% !important ; height: 30% !important ; }
+
+
+.sprite {
+  background-image: url("../images/sprite-users.png");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  border-radius: 50%;
+  display: block;
+}
+
+.sprite-hombre1 {
+  width: 35px;
+  height: 35px;
+  background-position: -5px -5px;
+}
+
+.sprite-hombre2 {
+  width: 35px;
+  height: 35px;
+  background-position: -50px -5px;
+}
+
+.sprite-mujer1 {
+  width: 35px;
+  height: 35px;
+  background-position: -5px -50px;
+}
+
+.sprite-mujer2 {
+  width: 35px;
+  height: 35px;
+  background-position: -50px -50px;
+}
+
+.sprite-mujer3 {
+  width: 35px;
+  height: 35px;
+  background-position: -95px -5px;
+}
+
+
 
 
 /*# sourceMappingURL=Style.css.map */

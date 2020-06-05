@@ -7,12 +7,16 @@ block navigation
                 span(class="navbar-toggler-icon")
         div(class="collapse navbar-collapse", id="navbarNav")
             ul(class="navbar-nav")
-                li(class="nav-item active")
+                li(class="nav-item")
                     a(class="navbar-nav" href="/profile")
-                        img(src='/images/default_Icons/img_avatar.png', alt='', class="d-inline-block align-top" width="35" height="35" style="vertical-align: middle;border-radius: 50%;")
+                        if user.genero === "Masculino"
+                            i(class="sprite sprite-hombre1")
+                        else if user.genero === "Femenino"
+                            i(class="sprite sprite-mujer1")
+                        //img(src='/images/sprite-users.png', alt='', class="d-inline-block align-top " width="35" height="35" style="vertical-align: middle;border-radius: 50%;")
                         span(class="navbar-text ml-2") #{user.nombre}
             ul(class="navbar-nav ml-auto")
-                li(class="nav-item active")
+                li(class="nav-item")
                     a(class="nav-link text-white fas fa-user-alt fa-1sm" href="/profile")  Mi cuenta
                 li(class="nav-item")
                     a(class="nav-link text-white fas fa-chart-bar" href="/stats")  Estadisticas
