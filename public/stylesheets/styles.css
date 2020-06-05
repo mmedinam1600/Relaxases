@@ -3,7 +3,9 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 header {
-  padding: 150px 0 100px;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-position: 0 -65px;
 }
 
 .bg-custom{
@@ -37,7 +39,6 @@ header {
 .fondo{
   background-image: url("../images/Background.jpg");
 }
-
 section {
   padding: 150px 0;
 }
