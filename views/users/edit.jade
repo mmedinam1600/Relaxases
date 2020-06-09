@@ -1,0 +1,35 @@
+extends ../Layout_Users.jade
+block content
+    div(class="container p-4")
+        div(class="row")
+            div(class="col-mod-4 mx-auto")
+                div(class="card text-center")
+                    div(class="card-header")
+                        h2 Editar Perfil
+                    div(class="card-body")
+                        form(action="/profile/edit/#{user.curp}", method="POST")
+                            div(class="form-group")
+                                label(for="nombre") Nombre(s):
+                                input(type="text", name="nombre", placeholder="Nombre(s)", class="form-control Nombre", autofocus, required, id="nombre" value="#{user.nombre}")
+                            div(class="form-group")
+                                label(for="apellido") Apellido(s):
+                                input(type="text", name="apellido", placeholder="Apellido(s)", class="form-control Apellido", required, id="apellido" value="#{user.apellido}")
+                            div(class="form-group")
+                                label(for="edad") Edad:
+                                input(type="number", name="edad", placeholder="Edad", class="form-control", required, id="edad" value="#{user.edad}")
+                            div(class="form-group")
+                                label(for="fec_nac") Fecha de Nacimiento:
+                                input(type="date", name="fec_nac", class="form-control", required, id="fec_nac" value="#{user.fec_nac}")
+                            div(class="form-group")
+                                label(for="genero") Género:
+                                select(name="genero", class="form-control", required, id="genero")
+                                    if user.genero === "Masculino"
+                                        option(selected) Masculino
+                                        option() Femenino
+                                    else
+                                        option(selected) Femenino
+                                        option() Masculino
+                            div(class="form-group")
+                                button(type="submit" class="btn btn-success btn-block") Guardar Cambios
+                        //form(action="/profile/edit/ZWISWIJD9328UH3DNO", method="POST")
+                            button(type="submit" class="btn btn-success btn-block") Guardar Cambios CURP erronea
