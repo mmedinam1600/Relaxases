@@ -19,13 +19,11 @@ primary key (`curp`)
 
 
 create table `EstadoSalud`(
-`ritmo_cardiaco` int(10) default '0',
 `porcentaje_spo2` int(10) default '0',
-`fecha` varchar(30) not null,
+`fecha` timestamp NOT NULL DEFAULT current_timestamp,
 `id_status` int(11) not null,
 `curp_user` varchar(18),
-primary key (`id_status`),
-constraint `fk_usuario` foreign key(`curp_user`) references `Usuarios`(`curp`) on delete cascade on update cascade
+primary key (`id_status`)
 ) engine=InnoDB default charset=utf8;
 
 
@@ -55,6 +53,9 @@ ALTER TABLE links
 
 ALTER TABLE links
     MODIFY id INT(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1
+
+ALTER TABLE EstadoSalud
+    MODIFY id_status INT(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 1
 
 DESCRIBE links;
 --------------------------------------------------------------
