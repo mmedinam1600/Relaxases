@@ -99,12 +99,12 @@ router.post('/stats/subir/:curp', isLoggedIn, async (req, res) =>{
         };
         console.log("Nivel final: " + FinalLevel);
         await pool.query('insert into EstadoSalud set ?', [newMeasure]);
-        req.flash('success', 'Perfil actualizado correctamente');
+        req.flash('success', 'Medicion Guardada Exitosamente');
         res.redirect('/profile');
     }
     else{
         //console.log("Intentan editar el curp del metodo post");
-        req.flash('failure', 'Error al actualizar el usuario. Intento de hackeo');
+        req.flash('failure', 'Error al insertar Medicion. Intento de hackeo');
         res.redirect('/profile');
     }
 })

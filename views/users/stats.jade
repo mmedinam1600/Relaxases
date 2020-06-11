@@ -61,10 +61,6 @@ block content
                 },
                 options: {}
             });
-
-            
-
-
     
     #Modal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
       .modal-dialog.modal-dialog-centered(role='document')
@@ -76,10 +72,10 @@ block content
           .modal-body
             p#estres Holaaaa
           .modal-footer
-            //button.btn.btn-secondary(type='button', data-dismiss='modal') Close
             form(method='POST' action='/stats/subir/#{user.curp}')
-                input#obtener(value="" type='hidden', name='FinalLevel')
-                button.btn.btn-primary(type='submit') De Acuerdo
+                    button.btn.btn-secondary(type='button', data-dismiss='modal', onclick='window.location.reload();') Reiniciar Test
+                    input#obtener(value="" type='hidden', name='FinalLevel')
+                    button.btn.btn-primary(type='submit') De Acuerdo
 
 
 
