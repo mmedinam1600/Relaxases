@@ -31,10 +31,12 @@ block content
                     if(FinalLevel<95)
                     {
                         document.getElementById("estres").innerHTML = "Su nivel de Saturación de Oxigeno es bajo. Es probable que este padeciendo un ataque de estres";
+                        document.getElementById("obtener").value = parseInt(FinalLevel);
                     }
                     else
                     {
                         document.getElementById("estres").innerHTML = "Su nivel de Saturación de Oxigeno se encuentra estable.";
+                        document.getElementById("obtener").value = parseInt(FinalLevel);
                     }
                     document.getElementById("percent").innerHTML = "Nivel Promedio de %SPO2: " + FinalLevel.toString();
                     $(document).ready(function(){
@@ -70,8 +72,16 @@ block content
           .modal-body
             p#estres Holaaaa
           .modal-footer
-            //button.btn.btn-secondary(type='button', data-dismiss='modal') Close
-            button.btn.btn-primary(type='button') De Acuerdo
+            form(method='POST' action='/stats/subir/#{user.curp}')
+                    button.btn.btn-secondary(type='button', data-dismiss='modal', onclick='window.location.reload();') Reiniciar Test
+                    input#obtener(value="" type='hidden', name='FinalLevel')
+                    button.btn.btn-primary(type='submit') De Acuerdo
+
+
+
+    
+    
+
 
 
 

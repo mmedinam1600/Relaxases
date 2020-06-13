@@ -96,4 +96,24 @@ router.get('/tips', isLoggedIn , async (req, res) =>{
     res.render('users/tips', {registros}); //Renderizamos la pagina links y le mandamos el objeto links que es un array
 });
 
+router.post('/stats/subir/:curp', isLoggedIn, async (req, res) =>{
+    const {curp} = req.params;
+    if( curp === req.user.curp) {
+        const {FinalLevel} = req.body;
+        const newMeasure = {
+            porcentaje_spo2:FinalLevel,
+            curp_user:curp,
+        };
+        console.log("Nivel final: " + FinalLevel);
+        await pool.query('insert into EstadoSalud set ?', [newMeasure]);
+        req.flash('success', 'Medicion Guardada Exitosamente');
+        res.redirect('/tips');
+    }
+    else{
+        //console.log("Intentan editar el curp del metodo post");
+        req.flash('failure', 'Error al insertar Medicion. Intento de hackeo');
+        res.redirect('/tips');
+    }
+});
+
 module.exports = router;

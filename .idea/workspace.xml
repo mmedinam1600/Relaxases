@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/users/tips.jade" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/users/tips2.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databaseTable/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/databaseTable/db.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/stats.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/tips2.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/tips2.jade" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +115,7 @@
       <workItem from="1591731380159" duration="3913000" />
       <workItem from="1591805719430" duration="48000" />
       <workItem from="1591827347404" duration="2822000" />
-      <workItem from="1592066893784" duration="5465000" />
+      <workItem from="1592066893784" duration="5850000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>
