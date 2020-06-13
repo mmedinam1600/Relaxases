@@ -1,59 +1,113 @@
 extends ../Layout_Users_Stats.jade
 block content
-    each registro, i in registros
-        if i!== 0
-            if registros[0].porcentaje_spo2 >= 90
-                div(class="card text-white bg-success mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Registro #{i}
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registro.porcentaje_spo2}
-                        p(class="card-text") Tienes un porcentaje adecuado y saludable.
-                        p(class="card-text") #{registro.fecha}
-            else if registros[0].porcentaje_spo2 >= 85 || registros[0].porcentaje_spo2 < 90
-                div(class="card text-white bg-warning mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Registro #{i}
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registro.porcentaje_spo2}
-                        p(class="card-text") Evite hacer ejercicio y procure vivir en una altitud baja.
-                        p(class="card-text") #{registro.fecha}
-            else if registros[0].porcentaje_spo2 < 85
-                div(class="card text-white bg-danger mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Registro #{i}
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registro.porcentaje_spo2}
-                        p(class="card-text") Es muy importante que consulte a su medico ya que usted tiene problemas muy graves de oxigeno.
-                        p(class="card-text") #{registro.fecha}
-            else
-                div(class="card text-white bg-danger mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Ultimo Registro
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
-                        p(class="card-text") Es muy importante que consulte a su medico ya que usted tiene problemas muy graves de oxigeno.
-                        p(class="card-text") #{registro.fecha}
-        else
-            if registros[0].porcentaje_spo2 >= 90
-                div(class="card text-white bg-success mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Ultimo Registro
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
-                        p(class="card-text") Tienes un porcentaje adecuado y saludable.
-                        p(class="card-text") #{registro.fecha}
-            else if registros[0].porcentaje_spo2 >= 85 || registros[0].porcentaje_spo2 < 90
-                div(class="card text-white bg-warning mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Ultimo Registro
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
-                        p(class="card-text") Evite hacer ejercicio y procure vivir en una altitud baja.
-                        p(class="card-text") #{registro.fecha}
-            else if registros[0].porcentaje_spo2 < 85
-                div(class="card text-white bg-danger mb-3" style="max-width: 18rem;")
-                    div(class="card-header") Ultimo Registro
-                    div(class="card-body")
-                        h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
-                        p(class="card-text") Es muy importante que consulte a su medico ya que usted tiene problemas muy graves de oxigeno.
-                        p(class="card-text") #{registro.fecha}
-    else
+    if registros[0].porcentaje_spo2 >= 90
+        div(class="card text-white bg-success mb-3" style="max-width: 28rem;")
+            div(class="card-header") Ultimo Registro
+            div(class="card-body")
+                h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
+                p(class="card-text") Tienes un porcentaje adecuado y saludable.
+                p(class="card-text") #{registros[0].fecha}
+    else if registros[0].porcentaje_spo2 >= 85 || registros[0].porcentaje_spo2 < 90
+        div(class="card text-white bg-warning mb-3" style="max-width: 28rem;")
+            div(class="card-header") Ultimo Registro
+            div(class="card-body")
+                h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
+                p(class="card-text") Evite hacer ejercicio y procure vivir en una altitud baja.
+                p(class="card-text") #{registros[0].fecha}
+    else if registros[0].porcentaje_spo2 < 85
+        div(class="card text-white bg-danger mb-3" style="max-width: 28rem;")
+            div(class="card-header") Ultimo Registro
+            div(class="card-body")
+                h5(class="card-title") SpO2: #{registros[0].porcentaje_spo2}
+                p(class="card-text") Es muy importante que consulte a su medico ya que usted tiene problemas muy graves de oxigeno.
+                p(class="card-text") #{registros[0].fecha}
+    else if registros.isEmpty
         div(class="col-md-4 mx-auto")
             div(class="card card-body text-center")
                 p No hay registros de tu SpO2
                 a(href="/stats") Checa tu SpO2 aqui!
+
+    #video-carousel-example.carousel.slide.carousel-fade(data-ride='carousel', data-interval="false")
+        // Indicators
+        ol.carousel-indicators
+            li.active(data-target='#video-carousel-example', data-slide-to='0')
+            li(data-target='#video-carousel-example', data-slide-to='1')
+            li(data-target='#video-carousel-example', data-slide-to='2')
+        // /.Indicators
+        // Slides
+        .carousel-inner(role='listbox')
+            .carousel-item.active
+                div(class="container")
+                    div(class="embed-responsive embed-responsive-16by9")
+                        iframe(width="853" height="480" src="https://www.youtube.com/embed/_sEa9_EdaOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .carousel-item
+                div(class="container")
+                    div(class="embed-responsive embed-responsive-16by9")
+                        iframe(width="853" height="480" src="https://www.youtube.com/embed/DNrnDx-KZUY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+            .carousel-item
+                div(class="container")
+                    div(class="embed-responsive embed-responsive-16by9")
+                        iframe(width="853" height="480" src="https://www.youtube.com/embed/degKbH3z2qU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        // /.Slides
+        // Controls
+        a.carousel-control-prev(href='#video-carousel-example', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#video-carousel-example', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+        // /.Controls
+
+    //div(class="container")
+        div(class="embed-responsive embed-responsive-16by9")
+            iframe(width="853" height="480" src="https://www.youtube.com/embed/_sEa9_EdaOc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+    br
+    br
+    .container
+        .card-deck
+            .card
+                .item
+                    img.card-img-top(src='/images/paisaje2.jpg', alt='paisaje')
+                .border-effect.bg-warning
+                .card-body
+                    h4.card-title Respirar y Exhalar
+                    p.card-text
+                        | Respira profundamente y exhala lentamente imaginando paisajes tranquilos.
+                    //p.card-text
+                        small.text-muted Last updated 3 mins ago
+            .card
+                .item
+                    img.card-img-top(src='/images/relajacion.png', alt='relajacion')
+                .border-effect.bg-warning
+                .card-body
+                    h4.card-title Abre tu mente
+                    p.card-text Cierra tus ojos y deja fluir tus pensamientos.
+                    //p.card-text
+                        small.text-muted Last updated 3 mins ago
+            .card
+                .item
+                    img.card-img-top(src='/images/paisaje3.jpg', alt='relajacion')
+                .border-effect.bg-warning
+                .card-body
+                    h4.card-title ¿Bueno o Malo?
+                    p.card-text
+                        | No luches con tus pensamientos. El intelecto no es el enemigo. Ama tu intelecto; no lo veas como algo malo.
+                    //p.card-text
+                        small.text-muted Last updated 3 mins ago
+            .card
+                .item
+                    img.card-img-top(src='/images/relajacion2.jpg', alt='relajacion')
+                .border-effect.bg-warning
+                .card-body
+                    h4.card-title Disfruta el ahora
+                    p.card-text
+                        | Deja de pensar en el pasado o en el futuro. Solo vive el hoy.
+                    //p.card-text
+                        small.text-muted Last updated 3 mins ago
+    br
+    br
+    div(class="card border-secondary mb-3" style="max-width: 18rem;")
+        div(class="card-header") Ayuda psicologica gratis
+        div(class="card-body text-secondary")
+            p(class="card-text") Saptel 555 259 8121 y al 800 472 7835
+            p(class="card-text") Atención a distancia de la UNAM 555 025 0825

@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/databaseTable/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/databaseTable/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/stats.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/stats.jade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/users/tips2.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/tips2.jade" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/paisaje.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/paisaje1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/paisaje2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/paisaje3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/relajacion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/relajacion1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/relajacion2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/javascripts/carousel_pause.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ADOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ADOO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/tips.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/tips.jade" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +45,9 @@
         <option value="tsconfig.json" />
         <option value="package.json" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="Jade File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -74,17 +82,17 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images" />
-      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images\default_Icons" />
-      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\javascripts" />
-      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views\auth" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views\users" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\stylesheets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images\default_Icons" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\javascripts" />
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\views\auth" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -115,7 +123,7 @@
       <workItem from="1591731380159" duration="3913000" />
       <workItem from="1591805719430" duration="48000" />
       <workItem from="1591827347404" duration="2822000" />
-      <workItem from="1592066893784" duration="5850000" />
+      <workItem from="1592066893784" duration="12265000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>
