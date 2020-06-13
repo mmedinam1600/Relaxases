@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0cd960c-2773-478e-a880-e65c0bc897bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/videos/sonido1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/video1.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/video2.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/videos/video3.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/authentication.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/authentication.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/Layout_Users.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/Layout_Users.jade" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/users/home.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/home.jade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/users/profile.jade" beforeDir="false" afterPath="$PROJECT_DIR$/views/users/profile.jade" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +84,7 @@
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\stylesheets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\videos" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\images\default_Icons" />
       <recent name="C:\Users\ElCapiPrice\WebstormProjects\ADOO\public\javascripts" />
@@ -113,7 +119,7 @@
       <workItem from="1591731380159" duration="3913000" />
       <workItem from="1591805719430" duration="48000" />
       <workItem from="1591827347404" duration="2822000" />
-      <workItem from="1592066893784" duration="13580000" />
+      <workItem from="1592066893784" duration="17741000" />
     </task>
     <task id="LOCAL-00001" summary="Actualizacion de Stats">
       <created>1591056471555</created>

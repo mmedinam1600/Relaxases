@@ -1,5 +1,35 @@
 extends ../Layout_Users.jade
 block content
-    center
-        h2 Bienvenido
-        img(src="/images/User.png" class="user")
+    audio(controls='' autoplay='' loop='')
+        source(src='/videos/sonido1.mp3', type='audio/mpeg')
+        | Your browser does not support the audio element.
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+        ol.carousel-indicators
+            li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+            li(data-target='#carouselExampleIndicators', data-slide-to='1')
+            li(data-target='#carouselExampleIndicators', data-slide-to='2')
+        .carousel-inner
+            .carousel-item.active
+                video(class="video-fluid" autoplay loop muted)
+                    source(src="/videos/video1.mp4" type="video/mp4")
+                div(class="carousel-caption d-none d-md-block")
+                    h3 Tip Del Día
+                    p(class="text-white" style="font-size:120%;") Si caminas solo, irás más rápido. Si caminas acompañado, llegarás más lejos.
+            .carousel-item
+                video(class="video-fluid" autoplay loop muted)
+                    source(src="/videos/video2.mp4" type="video/mp4")
+                div(class="carousel-caption d-none d-md-block")
+                    h3 Tip 2
+                    p(class="text-white" style="font-size:120%;") No pierdas nunca el sentido del humor y aprende a reírte de tus propios defectos.
+            .carousel-item
+                video(class="video-fluid" autoplay loop muted)
+                    source(src="/videos/video3.mp4" type="video/mp4")
+                div(class="carousel-caption d-none d-md-block")
+                    h3 Tip 3
+                    p(class="text-white" style="font-size:120%;") Persigue a las mariposas y nunca las atraparás. Observa a las mariposas y vendrán hasta ti…
+        a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
