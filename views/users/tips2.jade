@@ -1,0 +1,20 @@
+extends ../Layout_Users_Stats.jade
+block content
+    div(class="container p-4")
+        div(class="row")
+            each registro, i in registros
+                if i!== 0
+                    div(class="col-md-3 mt-4")
+                        div(class="card text-center")
+                            div(class="card-body")
+                                h3(class="card-title text-uppercase") Registro #{i}
+                                p(class="m-2") #{registro.porcentaje_spo2}
+                                p #{registro.fecha}
+                else
+                    div(class="col-md-10 mx-auto")
+                        div(class="card text-center")
+                            div(class="card-body")
+                                h3(class="card-title text-uppercase") Ultimo Registro
+                                p(class="m-2") #{registros[0].porcentaje_spo2}
+                                if registros[0].porcentaje_spo2 > 90
+                                    p Actualmente tienes buena salud

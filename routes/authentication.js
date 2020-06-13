@@ -89,4 +89,11 @@ router.get('/logout', isLoggedIn, (req, res) =>{
     res.redirect('/');
 });
 
+router.get('/tips', isLoggedIn , async (req, res) =>{
+    const curp = req.user.curp;
+    const registros = await pool.query('SELECT * FROM EstadoSalud WHERE curp_user = ? ORDER BY fecha DESC', [curp]);
+    //console.log(registros);
+    res.render('users/tips', {registros}); //Renderizamos la pagina links y le mandamos el objeto links que es un array
+});
+
 module.exports = router;
