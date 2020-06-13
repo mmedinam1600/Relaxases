@@ -45,8 +45,10 @@ router.post('/register', passport.authenticate('local.register', {
     failureFlash: true
 }));
 
-router.get('/profile',isLoggedIn, (req,res) =>{
-    res.render('users/profile');
+router.get('/profile',isLoggedIn, async (req,res) =>{
+    const curp = req.user.curp;
+    const registros = await pool.query('SELECT * FROM EstadoSalud WHERE curp_user = ? ORDER BY fecha DESC', [curp]);
+    res.render('users/profile', {registros});
 });
 
 router.post('/profile',isLoggedIn, (req,res) =>{

@@ -98,10 +98,18 @@ block content
                                     p #{user.fec_nac}
                         #profile.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
                             .row
-                                .col-md-6
-                                    label Aqui va la tabla de mediciones anteriores
-                                .col-md-6
-                                    p TABLA
+                                table.table
+                                    thead
+                                        tr
+                                            th(scope='col') #
+                                            th(scope='col') SpO2
+                                            th(scope='col') Fecha
+                                    tbody
+                                        each registro, i in registros
+                                            tr
+                                                th(scope='row') #{i+1}
+                                                td #{registro.porcentaje_spo2}
+                                                td #{registro.fecha}
                             //.row
                                 .col-md-6
                                     label Hourly Rate
